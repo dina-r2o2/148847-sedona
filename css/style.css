@@ -21,3 +21,95 @@ h2 {
     font-family: "PTSans", sans-serif;
     color: black;
 }
+
+body {
+    background: #333333 url(../img/sedona-index-768.jpg) no-repeat 50% 0;
+    background-size: 768 auto;
+}
+
+html, body {
+    min-width: 768px;
+    min-height: 2762px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    min-height: 56px;
+    margin-bottom: 10px;
+    background-color: rgba(83, 3, 66, 0.3)
+}
+
+.container {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 56px;
+    outline: 1px solid #444545;
+    background-color: rgba(13, 87, 322, 0.3);
+    position: relative;
+}
+
+.main-menu .nav-left {
+    width: 252px;
+    min-height: 56px;
+    margin-left: 46px;
+    margin-right: 0;
+    float: left;
+    outline: 1px solid red;
+}
+
+.main-menu .nav-right {
+    width: 252px;
+    min-height: 56px;
+    margin-right: 46px;
+    margin-left: 0;
+    float: right;
+    outline: 1px solid red;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.logo {
+    width: 140px;
+    min-height: 70px;
+    position: absolute;
+    left: 315px;
+}
+
+.clearfix:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.main-footer {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.main-footer .hashtag {
+    width: 153px;
+    min-height: 100px;
+    float: left;
+    margin-left: 47px;
+    background-color: rgba(83, 3, 66, 0.3);
+}
+
+.main-footer .footer-social {
+    width: 256px;
+    min-height: 100px;
+    float: left;
+    margin-left: 57px;
+    background-color: rgba(83, 3, 66, 0.3);
+}
+
+.main-footer .footer-copyright {
+    width: 200px;
+    min-height: 100px;
+    float: right;
+    margin-right: 30px; 
+    background-color: rgba(83, 3, 66, 0.3);
+}
+
