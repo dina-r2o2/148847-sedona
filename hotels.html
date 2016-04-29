@@ -7,14 +7,16 @@
     </head>
     <body>
       <header class="main-header">
-          <div class="container">
-              <a class="logo" href="#">
-              <img src="img/logo.svg" alt="logo" width="138" height="70">
-              </a>
+          <div class="container clearfix">
               <nav class="main-menu">
-              <ul>
+              <ul class="nav-left">
                   <li><a href="#">Информация</a></li>
                   <li><a href="#">Фото и видео</a></li>
+              </ul>
+              <a class="logo" href="#">
+              <img src="img/logo.png" alt="logo" width="138" height="70">
+              </a>
+              <ul class="nav-right">
                   <li><a href="#">Карта штата</a></li>
                   <li><a href="#">Гостиницы</a></li>
               </ul>
@@ -24,7 +26,7 @@
       <main class="container">
          <div class="filter">
              <form action="form-filter" class="hotels-search" method="get">
-                  <fieldset>
+                  <fieldset class="column-1">
                       <legend>Инфраструктура</legend>
                       <input type="checkbox" name="pool" checked>
                       <label for="pool">Бассейн</label>
@@ -33,7 +35,7 @@
                       <input type="checkbox" name="wifi">
                       <label for="wifi">Wi-Fi</label>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="column-2">
                       <legend>Тип жилья</legend>
                       <input type="checkbox" name="hotel" checked>
                       <label for="hotel">Гостиница</label>
@@ -42,7 +44,7 @@
                       <input type="checkbox" name="suite" checked>
                       <label for="suite">Апартаменты</label>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="column-3">
                       <legend>>Стоимость в сутки (р):</legend>>
                       <input class="price" type="text" value="от 0">
                       <input class="price" type="text" value="до 3000">
@@ -57,22 +59,21 @@
                   </fieldset>
              </form>
           </div>
-          <div class="search-results">
+          <div class="search-results clearfix">
               <h2>Найдено:3</h2>
               <ul class="sort">
-                   <li>Сортировка:</li>
+                  <li>Сортировка:</li>
                   <li class="active"><a href="">По цене</a></li>
                   <li><a href="">По типу</a></li>
                   <li><a href="">По рейтингу</a></li>
               </ul>
-              <ul class="slider">
+              <ul class="switch">
                   <li><a href='#'>Вверх</a></li>
                   <li class="active">Вниз</li>
-              </ul>
           </div>
           <div class="hotels-content">
-              <article class="hotels">
-                  <img src="img/hotels_amara.jpg" alt="Amara" width="135" height="90">
+              <article class="hotels clearfix">
+                  <img class="photo-hotel" src="img/hotels_amara.jpg" alt="Amara" width="135" height="90">
                   <div class="name-hotel">
                       <h2>Amara Resort & Spa</h2>
                       <span>Гостиница</span>
@@ -85,8 +86,8 @@
                       <p>Рейтинг: 8,5</p>
                   </div>
               </article>
-              <article class="hotels">
-                  <img src="img/hotels_desert.jpg" alt="Desert" width="135" height="90">
+              <article class="hotels clearfix">
+                  <img class="photo-hotel" src="img/hotels_desert.jpg" alt="Desert" width="135" height="90">
                   <div class="name-hotel">
                       <h2>Desert Quail Inn</h2>
                       <span>Мотель</span>
@@ -99,8 +100,8 @@
                       <p>Рейтинг: 8,9</p>
                   </div>
               </article>
-              <article class="hotels">
-                  <img src="img/hotels_villas.jpg" alt="Villas" width="135" height="90">
+              <article class="hotels clearfix">
+                  <img class="photo-hotel" src="img/hotels_villas.jpg" alt="Villas" width="135" height="90">
                   <div class="name-hotel">
                       <h2>Villas At Poco Diablo</h2>
                       <span>Апартаменты</span>
@@ -115,8 +116,8 @@
               </article>
           </div>
       </main>
-      <footer>
-          <div class="container">
+      <footer class="main-footer">
+          <div class="container clearfix">
               <section class="hashtag">
                   <p>#visitsedona</p>
               </section>

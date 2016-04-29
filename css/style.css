@@ -23,7 +23,7 @@ h2 {
 }
 
 body {
-    background: #333333 url(../img/sedona-index-768.jpg) no-repeat 50% 0px;
+    background: #333333 url(../img/sedona-hotels-768.jpg) no-repeat 50% 0px;
     background-size: 768px auto;
 }
 
@@ -213,4 +213,99 @@ h1{
     padding: 33px 27px;
     text-align: center;
     outline: 1px solid yellow;
+}
+
+.index-search {
+    display: none;
+}
+
+/* for hotel.html */
+
+.hotels-search fieldset {
+    display: inline-block;
+    min-height: 217px;
+    margin: 0;
+    margin-right: -4px;
+    padding: 0;
+    border: none;
+    min-height: 217px;
+    vertical-align: top;
+    text-align: center;
+    outline: 1px solid red;
+}
+.hotels-search fieldset:nth-child(1) {
+    padding-left: 46px;
+}
+
+.hotels-search fieldset:nth-child(3) {
+    padding-right: 46px;
+}
+.column-1 {
+    width: 211px;
+    background-color: rgba(9, 9, 9, 0.5);
+}
+
+.column-2 {
+    width: 211px;
+    background-color: rgba(9, 9, 9, 0.5);
+}
+
+.column-3 {
+    width: 254px;
+    padding-right: 46px;
+    background-color: rgba(1, 1, 5, 0.5);
+}
+
+
+.search-results h2{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 198px;
+    min-height: 86px;
+    outline: 2px solid yellow;
+}
+
+.search-results .sort {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 372px;
+    min-height: 86px;
+    outline: 2px solid green;
+}
+
+.search-results .sort li{
+    display: inline-block;
+}
+
+.search-results .switch {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 198px;
+    min-height: 86px;
+    outline: 2px solid green;
+}
+
+
+.hotels .photo-hotel{
+    float: left;
+    width: 198px;
+    min-height: 152px;
+    outline: 2px solid yellow;
+}
+
+.hotels .name-hotel {
+    float: left;
+    width: 372px;
+    min-height: 152px;
+    outline: 2px solid green;
+}
+
+.hotels .info-hotel {
+    float: right;
+    width: 198px;
+    min-height: 152px;
+    outline: 2px solid red;
 }
