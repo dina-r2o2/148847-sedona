@@ -22,9 +22,9 @@ h2 {
     color: black;
 }
 
-body {
+/*body {
     background: #333333 url(../img/sedona-hotels-768.jpg) no-repeat 50% 0px;
-    background-size: 768px auto;
+    background-size: 768px auto;*/
 }
 
 html, body {
@@ -168,13 +168,13 @@ h1{
 }
 
 .container-content-3 .content-right {
-    float: left;
+    float: right;
     width: 256px;
     min-height: 256px;
     background-color: rgba(9, 9, 9, 0.5);
 }
 .container-content-3 .img-left {
-    float: right;
+    float: left;
     width: 512px;
     min-height: 256px;
     outline: 1px solid yellow;
