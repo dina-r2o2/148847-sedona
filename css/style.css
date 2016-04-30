@@ -286,9 +286,12 @@ h1{
     width: 198px;
     min-height: 86px;
     outline: 2px solid green;
+    text-align: right;
 }
 
-
+.switch li {
+    display: inline-block;
+}
 .hotels .photo-hotel{
     float: left;
     width: 198px;
@@ -298,8 +301,9 @@ h1{
 
 .hotels .name-hotel {
     float: left;
-    width: 372px;
+    width: 314px;
     min-height: 152px;
+    padding-right: 58px;
     outline: 2px solid green;
 }
 
@@ -307,5 +311,10 @@ h1{
     float: right;
     width: 198px;
     min-height: 152px;
+    text-align: right;
     outline: 2px solid red;
+}
+
+.hotels a {
+    display: inline-block;
 }
