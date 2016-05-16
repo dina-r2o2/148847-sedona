@@ -11,17 +11,19 @@
       <header class="main-header">
           <div class="container clearfix">
               <nav class="main-menu">
-              <ul class="nav-left">
-                  <li><a href="#">Информация</a></li>
-                  <li><a href="#">Фото и видео</a></li>
-              </ul>
-              <a class="logo" href="index.html">
-              <img src="img/logo.png" alt="logo" width="138" height="70">
-              </a>
-              <ul class="nav-right">
-                  <li><a href="#">Карта штата</a></li>
-                  <li><a href="#">Гостиницы</a></li>
-              </ul>
+              <ul class="nav">
+                      <li class="nav-left"><a href="#">Информация</a></li>
+                      <li class="nav-left"><a href="#">Фото и видео</a></li>
+                      <li class="logo">
+                          <a href="index.html">
+                              <img src="img/logo.png" alt="logo" width="138" height="70">
+                          </a>
+                      </li>
+                      <li class="nav-right"><a href="#">Карта штата</a></li>
+                      <li class="nav-right">
+                          <a class="active-page" href="hotels.html">Гостиницы</a>
+                      </li>
+                 </ul>
               </nav>
           </div>
       </header>
@@ -76,12 +78,14 @@
           </div>
           <div class="search-results clearfix">
               <h2>Найдено: 3</h2>
-              <ul class="sort">
-                  <li>Сортировка:</li>
-                  <li class="active">По цене</li>
-                  <li><a href="">По типу</a></li>
-                  <li><a href="">По рейтингу</a></li>
-              </ul>
+              <div class="sort clearfix">
+                  <span>Сортировка:</span>
+                  <ul class="sort-list">
+                      <li class="active">По цене</li>
+                      <li><a href="">По типу</a></li>
+                      <li><a href="">По рейтингу</a></li>
+                  </ul>
+               </div>
               <ul class="switch">
                   <li><a href='#'><span class="icon-up-dir"></span>Вверх</a></li>
                   <li><a class="active"><span class="icon-down-dir"></span>Вниз</a></li>
@@ -89,9 +93,9 @@
           </div>
           <div class="hotels-content">
               <article class="hotels clearfix">
-                  <img class="photo-hotel" src="img/hotels_amara.jpg" alt="Amara" width="135" height="90">
+                  <img class="photo-hotel" src="img/hotels-amara.jpg" alt="Amara" width="135" height="90">
                   <div class="name-hotel">
-                      <h2>Amara Resort & Spa</h2>
+                      <a href="#" class="name">Amara Resort & Spa</a>
                       <span>Гостиница</span>
                       <span>От 3500 р.</span>
                       <div class="btn">
@@ -104,9 +108,9 @@
                   </div>
               </article>
               <article class="hotels clearfix">
-                  <img class="photo-hotel" src="img/hotels_desert.jpg" alt="Desert" width="135" height="90">
+                  <img class="photo-hotel" src="img/hotels-desert.jpg" alt="Desert" width="135" height="90">
                   <div class="name-hotel">
-                      <h2>Desert Quail Inn</h2>
+                      <a href="#" class="name">Desert Quail Inn</a>
                       <span>Мотель</span>
                       <span>От 2000 р.</span>
                       <div class="btn">
@@ -119,9 +123,9 @@
                   </div>
               </article>
               <article class="hotels clearfix">
-                  <img class="photo-hotel" src="img/hotels_villas.jpg" alt="Villas" width="135" height="90">
+                  <img class="photo-hotel" src="img/hotels-villas.jpg" alt="Villas" width="135" height="90">
                   <div class="name-hotel">
-                      <h2>Villas At Poco Diablo</h2>
+                      <a href="#" class="name">Villas At Poco Diablo</a>
                       <span>Апартаменты</span>
                       <span>От 4000 р.</span>
                       <div class="btn">
@@ -130,7 +134,7 @@
                       </div>
                   </div>
                   <div class="info-hotel villas">
-                      <p>Рейтинг: 8,9</p>
+                      <p>Рейтинг: 9,2</p>
                   </div>
               </article>
           </div>
