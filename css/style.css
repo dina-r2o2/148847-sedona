@@ -7,6 +7,11 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     color: #000000;
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+body {
     background-color: #ffffff;
 }
 
@@ -170,34 +175,39 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 46px;
-    height: 48px;
+    height: 36px;
     margin: 0;
     margin-right: 2px;
     margin-top: 5px;
+    padding-top: 12px;
     font-size: 0;
+    text-align: center;
+    color: #ffffff;
     background-color: #81b3d2;
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
 }
 
-.social-btn-tw {
-    background-position: 5px -33px;
+.social-btn span {
+    font-size: 19px;
+    line-height: 20px;
 }
 
-.social-btn-fb {
-    background-position: 7px 3px;
+.social-btn .icon-youtube {
+    font-size: 23px;
 }
 
-.social-btn-yt {
-    background-position: 3px -68px;
+.social-btn:hover,
+.social-btn .icon-twitter:hover,
+.social-btn .icon-facebook:hover,
+.social-btn .icon-youtube:hover {
+    background-color: rgba(102, 158, 192, 1);
 }
 
-.social-btn:hover {
-    background-color: #669ec0;
-}
-
-.social-btn:active {
-    background-color: #5496bd;
+.social-btn:active,
+.social-btn .icon-twitter:active,
+.social-btn .icon-facebook:active,
+.social-btn .icon-youtube:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(84, 150, 189, 1);
 }
 
 .main-footer .footer-copyright {
@@ -300,7 +310,8 @@ body {
 
 .content-left span:before, 
 .content-left span:after {
-    content: " — ";
+    content: "\2013";
+    margin-right: 2px;
 }
 
 .container-content-1 .img-right {
@@ -382,7 +393,8 @@ body {
 
 .content-right span:before, 
 .content-right span:after {
-    content: " — ";
+    content: "\2013";
+    margin-right: 2px;
 }
 
 .container-content-3 p {
@@ -442,6 +454,10 @@ body {
     font-weight: 700;
 }
 
+.container-content-4 span {
+    color: #333333;
+}
+
 .container-content-4 p {
     margin-top: 23px;
     margin-bottom: 37px; 
@@ -491,6 +507,10 @@ body {
 .Sedona-visit .map {
     z-index: 0;
     margin-bottom: -127px;
+}
+
+iframe {
+    border-width: 0;
 }
 
 .index-search {
@@ -549,11 +569,13 @@ input::-ms-clear {
    display: none;
 }
 
-.search-date input:hover {
+.search-date input:hover,
+.guest input:hover {
     background-color: #ebebeb;
 }
 
-.search-date input:focus {
+.search-date input:focus,
+.guest input:focus {
     background-color: #ffffff;
     outline: 2px solid #e5e5e5;
 }
